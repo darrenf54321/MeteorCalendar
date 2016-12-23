@@ -1,0 +1,35 @@
+<template name="calendar">
+  	{{>editEvent}}
+</template>
+
+
+<template name="editEvent">
+	<div class="modal" id="EditEventModal">
+	  <div class="modal-dialog">
+		  <div class="modal-content">
+		    <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+			    <h4 class="modal-title">Agenda Item</h4>
+		    </div>
+		    <div class="modal-body">
+			    <label for="title">Item: </label><input type="text" class="title" name="title" value="{{evt.title}}" id="title">
+		    </div>
+				<div class="modal-body">
+			    <label for="assignee">Assignee: </label><input type="text" class="assignee" name="assignee" value="{{evt.assignee}}" id="assignee">
+		    </div>
+				<div class="modal-body">
+                <label for="completeStatus">Task Complete?</label>
+                <select name="completeStatus" class="form-control">
+                  <option value="Pending">Pending</option>
+                  <option value="Complete">Complete</option>
+                </select>
+              </div>
+		    <div class="modal-footer">
+    			<a href="#" class="btn btn-primary save">Save</a>
+					<a href="#" class="btn btn-deny remove">Delete</a>
+    			<a href="#" class="btn btn-close" data-dismiss="modal">Cancel</a>
+  		  </div>
+  		</div>
+	  </div>
+	</div>
+</template>

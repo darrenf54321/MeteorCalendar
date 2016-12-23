@@ -1,0 +1,16 @@
+
+<template name="Tasks">
+
+		{{#each tasks}}
+
+			<div class="tasks-layout">
+				<h3>{{title}}</h3>
+
+				<p class="text"><span class="task-item">Client:</span> {{client_name}}</p>
+				<p class="text"><span class="task-item">Assigned:</span> {{assignee}}</p>
+				<p class="text"><span class="task-item">Target Date:</span> {{formatDate start}}</p>
+			</div>
+
+		{{/each}}
+
+</template>

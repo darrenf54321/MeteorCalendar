@@ -1,0 +1,27 @@
+<template name="register">
+  <div class="register">
+    <h2>Register</h2>
+    <div class="form-group">
+      <label>Email</label>
+      <input class="" type="email" placeholder="Email Address" id="email" />
+    </div>
+    <div class="form-group">
+      <label>First Name</label>
+      <input class="" type="text" placeholder="First Name" id="first-name" />
+      <label>Last Name</label>
+      <input class="" type="text" placeholder="Last Name" id="last-name" />
+    </div>
+    <div class="form-group">
+      <label>Address</label>
+      <input class="" type="text" placeholder="First-Line" id="address" />
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input class="" type="password" placeholder="Password" id="password" />
+      <label>Confirm Password</label>
+      <input class="" type="password" placeholder="Confirm Password" id="password-again" />
+    </div>
+    <button class="btn" id="register-button" type="submit">Register</button>
+    <p>Already Registered? <a href="{{pathFor 'login'}}">Login Here</a></p>
+  </div>
+</template>

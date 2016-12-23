@@ -1,0 +1,19 @@
+<template name="Clients">
+  {{> clientSearch }}
+  <section class="clients">
+    {{#each clients}}
+    <article class="client">
+      <div class="client-header">
+        <h3>{{name}}</h3>
+        <span class="client-date">Subscribed: {{formatDate date}}</span>
+      </div>
+      <div class="client-details">
+        <p><span>Address:</span> {{streetName}}</p>
+      </div>
+      <div class="client-footer">
+        <a href="/compliance-client" class="btn">View Calendar</a>
+      </div>
+    </article>
+    {{/each}}
+  </section>
+</template>

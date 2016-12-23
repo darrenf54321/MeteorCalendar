@@ -1,0 +1,21 @@
+<template name="TopNav">
+	<nav class="top-nav">
+		<ul>
+      {{#if currentUser}}
+			<li>
+				<a href="/create-client" class="btn btn-orange"><i class="fa fa-plus-square"></i> Add Client</a>
+			</li>
+      <li>
+        <a href="/logout" class="btn"><i class="fa fa-sign-out"></i> Logout</a>
+      </li>
+      {{else}}
+      <li>
+        <a href="/login" class="btn"><i class="fa fa-sign-in"></i> Login</a>
+      </li>
+      <li>
+        <a href="/register" class="btn"><i class="fa fa-address-card-o"></i> Register</a>
+      </li>
+      {{/if}}
+		</ul>
+	</nav>
+</template>
